@@ -19,7 +19,7 @@ function draw_one_frame(words, vocal, drum, bass, other, counter) {
   let storkeColor = lerpColor(blueColor, pinkColor, gradentAmount)
   stroke(storkeColor)
   line(0,drum*4+i,width,drum*4+i)
-  triangle(bass*14, vocal*14, drum*14, other*14, drum*12, vocal*12);
+  triangle(bass*14, vocal*15, drum*11, other*14, drum*13, vocal*12);
 
 
   let storkeColor2 = lerpColor(yellowColor, blueColor, gradentAmount)
@@ -30,14 +30,14 @@ function draw_one_frame(words, vocal, drum, bass, other, counter) {
   let storkeColor3 = lerpColor(pinkColor, blueColor, gradentAmount)
   stroke(storkeColor3)
   line(0,vocal*50+i*2,width,vocal+i*2)
-  triangle(bass*16, vocal*16, drum*16, other*16, drum*14, vocal*14);
+  triangle(bass*16, vocal*17, drum*13, other*16, drum*15, vocal*14);
   
 
   let storkeColor1 = lerpColor(pinkColor, yellowColor, gradentAmount)
   stroke(storkeColor1)
   ellipse(width/2,height/2,-i+bass*2)
   ellipse(vocal*7,other*11,i/5)
-  triangle(bass*15, vocal*15, drum*15, other*15, drum*13, vocal*13);
+  triangle(bass*15, vocal*16, drum*12, other*15, drum*14, vocal*13);
   ellipse(drum*22,vocal*12,i/10)
 
   let stripeWidth = map(other, 30, 100, 40, 80, true);
